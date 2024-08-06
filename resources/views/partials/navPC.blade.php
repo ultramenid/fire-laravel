@@ -1,8 +1,8 @@
 <!-- nav -->
 <div class="max-w-6xl mx-auto px-4 sm:flex hidden sm:justify-between justify-center items-center py-2 mt-4 ">
-    <img src="assets/logo-fire.png" alt="Mapbiomas Fire Indonesia" class="sm:h-12 h-10">
+    <a href="{{ route('index', [app()->getLocale()]) }}"><img src="{{ asset('assets/logo-full.png') }}" alt="Mapbiomas Fire Indonesia" class="sm:h-12 h-10"></a>
     <div class="sm:flex hidden gap-10 items-center">
-        <a class="text-red-600">about</a>
+        <a href="{{ route('about', [app()->getLocale()]) }}" class="text-red-600">about</a>
         <a class="text-red-600">qna</a>
         <a class="text-red-600">map & data</a>
 

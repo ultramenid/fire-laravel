@@ -15,6 +15,7 @@ Route::redirect('/', '/id');
 Route::middleware([setLanguage::class])->group(function () {
     Route::group(['prefix' => '{lang}'], function () {
         Route::get('/', [IndexController::class, 'index'])->name('index');
+        Route::get('/about', [PagesController::class, 'about'])->name('about');
 
     });
 });

@@ -92,17 +92,14 @@
        <!-- understand how -->
         <div class=" bg-red-50 h-[50vh] mt-12">
             <div class="max-w-6xl mx-auto px-4 py-6">
-                <a class="bg-red-600 p-2 text-white font-semibold sm:text-base text-xs">HOW MAPBIOMAS FIRE WORKS</a>
+                <a class="bg-red-600 p-2 text-white font-semibold sm:text-base text-xs">How Mapbiomas Fire Works</a>
             </div>
         </div>
 
         <!-- infographic -->
          <div class="max-w-6xl mx-auto px-4 mt-12">
-            <a class="bg-red-600 p-2 text-white font-semibold">INFOGRAPHIC</a>
-            <div class="bg-red-500 sm:h-[50vh] h-[25vh] mt-4 w-full mb-4"></div>
-            <a class="mt-4">Technical experts review MapBiomas Indonesia Collection 1 methodology and results</a>
-            <p class="mt-2 sm:text-base text-sm font-thin">Mapbiomas Indonesia involves technical experts in the field of Geographic Information System (GIS) to review the
-                platform, methodology and data of the first collection of land cover maps</p>
+            <a class="bg-red-600 py-2 px-2 text-white font-semibold ">Infographic</a>
+            <img src="{{ asset('assets/infographic-fire.jpeg') }}" alt="Mapbiomas Indonesia - Fire" class="w-full h-full mt-4">
          </div>
 
         <!-- collaboration -->
@@ -160,15 +157,5 @@
             </div>
         </div>
 
-        <!-- footer -->
-         <div class="bg-gray-500 border-t-4 border-red-500 mt-20 h-[50vh]">
-            <div class="flex sm:flex-row flex-col gap-10 max-w-6xl mx-auto px-4 py-7">
-                <a class="text-white">about</a>
-                <a class="text-white">faq</a>
-                <a class="text-white">map & data</a>
-                <a class="text-white">methodology</a>
-                <a class="text-white">news & event</a>
-                <a class="text-white">Inisiatif</a>
-            </div>
-         </div>
+       @include('partials.footer')
 @endsection
