@@ -29,7 +29,7 @@
         <a class="absolute bg-red-600 text-white sm:bottom-32 bottom-16 sm:left-72 left-5 px-4 py-1 font-semibold">Access The Platform</a>
       </div>
 
-      <!-- content -->
+      {{-- <!-- content -->
        <div class="max-w-6xl mx-auto flex sm:flex-row flex-col gap-5 px-4 mt-12">
             <div class=" sm:w-9/12 w-full  ">
                 <a class="bg-red-600 px-4 py-1 text-white font-semibold">News</a>
@@ -87,17 +87,17 @@
                 </div>
             </div>
 
-       </div>
+       </div> --}}
 
        <!-- understand how -->
-        <div class=" bg-red-50 h-[50vh]  mt-20">
+        <div class=" bg-red-50 h-[50vh] mt-12">
             <div class="max-w-6xl mx-auto px-4 py-6">
                 <a class="bg-red-600 p-2 text-white font-semibold sm:text-base text-xs">HOW MAPBIOMAS FIRE WORKS</a>
             </div>
         </div>
 
         <!-- infographic -->
-         <div class="max-w-6xl mx-auto px-4 mt-20">
+         <div class="max-w-6xl mx-auto px-4 mt-12">
             <a class="bg-red-600 p-2 text-white font-semibold">INFOGRAPHIC</a>
             <div class="bg-red-500 sm:h-[50vh] h-[25vh] mt-4 w-full mb-4"></div>
             <a class="mt-4">Technical experts review MapBiomas Indonesia Collection 1 methodology and results</a>

@@ -3,7 +3,7 @@
     <img src="assets/logo-fire.png" alt="Mapbiomas Fire Indonesia" class="sm:h-12 h-10">
     <div class="sm:flex hidden gap-10 items-center">
         <a class="text-red-600">about</a>
-        <a class="text-red-600">faq</a>
+        <a class="text-red-600">qna</a>
         <a class="text-red-600">map & data</a>
 
         <div class="flex-col flex" x-data="{pages:false}">
