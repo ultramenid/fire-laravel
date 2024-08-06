@@ -18,6 +18,7 @@ Route::middleware([setLanguage::class])->group(function () {
         Route::get('/about', [PagesController::class, 'about'])->name('about');
         Route::get('/refrencemap', [PagesController::class, 'refrencemap'])->name('refrencemap');
         Route::get('/termsofuse', [PagesController::class, 'termsofuse'])->name('termsofuse');
+        Route::get('/faq', [FaqController::class, 'listfaq'])->name('faq');
 
     });
 });

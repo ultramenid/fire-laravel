@@ -3,7 +3,7 @@
     <a href="{{ route('index', [app()->getLocale()]) }}"><img src="{{ asset('assets/logo-full.png') }}" alt="Mapbiomas Fire Indonesia" class="sm:h-12 h-10"></a>
     <div class="sm:flex hidden gap-10 items-center">
         <a href="{{ route('about', [app()->getLocale()]) }}" class="text-red-600">about</a>
-        <a class="text-red-600">FAQ</a>
+        <a href="{{ route('faq', [app()->getLocale()]) }}" class="text-red-600">FAQ</a>
         <a class="text-red-600">map & data</a>
 
         <div class="flex-col flex" x-data="{pages:false}">
