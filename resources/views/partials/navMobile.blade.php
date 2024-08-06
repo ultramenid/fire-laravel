@@ -40,7 +40,7 @@
                     <p class="border-b border-gray-300"></p>
                 </div>
                 <div class=" px-4">
-                    <a href=""  class="mb-4 px-4 inline-block  leading-5 text-white  font-semibold ">q & a<a>
+                    <a href=""  class="mb-4 px-4 inline-block  leading-5 text-white  font-semibold ">FAQ<a>
                     <p class="border-b border-gray-300"></p>
                 </div>
                 <div class=" px-4">
@@ -55,6 +55,7 @@
                         </svg>
                     </div>
                     <div class="bg-white px-4 py-3 mb-4 flex flex-col space-y-2 rounded" x-show="open1" style="display: none !important;">
+                        <a href="{{ route('termsofuse', [app()->getLocale()]) }}" class="text-sm mr-6">terms of use</a>
                         <a href="{{ route('refrencemap', [app()->getLocale()]) }}" class="text-sm mr-6">refrence map</a>
                     </div>
                     <p class="border-b border-gray-300"></p>

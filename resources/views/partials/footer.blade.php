@@ -2,7 +2,7 @@
         <div class="mt-12  border-t border-gray-300 max-w-6xl mx-auto px-4 py-4">
             <div class="flex sm:flex-row flex-col items-center overflow overflow-auto sm:gap-32 gap-4">
                 <div class="w-full sm:w-10/12 ">
-                    <h1>Collaborator</h1>
+                    <h1>Co Creators</h1>
                     <div class="flex justify-between w-full flex-wrap">
                         <a href="https://auriga.or.id/" target="_blank" >
                             <img class="h-10" src="https://mapbiomas.nusantara.earth/assets/images/AurigaPNG.png" alt="">

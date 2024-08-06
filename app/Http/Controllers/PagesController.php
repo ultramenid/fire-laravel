@@ -41,4 +41,10 @@ class PagesController extends Controller
         $description = "Inisiatif MapBiomas Fire dimulai sejak 2023, bersama sembilan jaringan organisasi masyarakat sipil (CSO) yang dikoordinasi oleh Auriga Nusantara dan Woods and Wayside International (WWI). MapBiomas Fire memetakan kebakaran menggunakan teknologi komputasi yang didukung algoritma machine learning dan deep learning.";
         return view('frontends.refrencemap', compact('title', 'description'));
     }
+
+    public function termsofuse(){
+        $title = 'Mapbiomas Fire - Termsofuse';
+        $description = "Inisiatif MapBiomas Fire dimulai sejak 2023, bersama sembilan jaringan organisasi masyarakat sipil (CSO) yang dikoordinasi oleh Auriga Nusantara dan Woods and Wayside International (WWI). MapBiomas Fire memetakan kebakaran menggunakan teknologi komputasi yang didukung algoritma machine learning dan deep learning.";
+        return view('frontends.termsofuse', compact('title', 'description'));
+    }
 }

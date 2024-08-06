@@ -17,6 +17,7 @@ Route::middleware([setLanguage::class])->group(function () {
         Route::get('/', [IndexController::class, 'index'])->name('index');
         Route::get('/about', [PagesController::class, 'about'])->name('about');
         Route::get('/refrencemap', [PagesController::class, 'refrencemap'])->name('refrencemap');
+        Route::get('/termsofuse', [PagesController::class, 'termsofuse'])->name('termsofuse');
 
     });
 });

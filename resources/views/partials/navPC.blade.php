@@ -13,6 +13,7 @@
                     </svg>
                 </a>
             <div class="absolute mt-8 z-20 bg-white px-2 py-2 flex flex-col space-y-2 w-40 border-red-600 border-b" x-show="pages" x-cloak style="display: none !important">
+                <a href="{{ route('termsofuse', [app()->getLocale()]) }}" class="text-sm mr-6">terms of use</a>
                 <a href="{{ route('refrencemap', [app()->getLocale()]) }}" class="text-sm mr-6">refrence map</a>
 
             </div>
