@@ -3,7 +3,7 @@
     <a href="{{ route('index', [app()->getLocale()]) }}"><img src="{{ asset('assets/logo-full.png') }}" alt="Mapbiomas Fire Indonesia" class="sm:h-12 h-10"></a>
     <div class="sm:flex hidden gap-10 items-center">
         <a href="{{ route('about', [app()->getLocale()]) }}" class="text-red-600">about</a>
-        <a class="text-red-600">qna</a>
+        <a class="text-red-600">FAQ</a>
         <a class="text-red-600">map & data</a>
 
         <div class="flex-col flex" x-data="{pages:false}">
@@ -13,7 +13,7 @@
                     </svg>
                 </a>
             <div class="absolute mt-8 z-20 bg-white px-2 py-2 flex flex-col space-y-2 w-40 border-red-600 border-b" x-show="pages" x-cloak style="display: none !important">
-                <a href="" class="text-sm mr-6">List 1</a>
+                <a href="{{ route('refrencemap', [app()->getLocale()]) }}" class="text-sm mr-6">refrence map</a>
 
             </div>
         </div>

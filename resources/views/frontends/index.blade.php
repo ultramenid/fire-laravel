@@ -99,63 +99,10 @@
         <!-- infographic -->
          <div class="max-w-6xl mx-auto px-4 mt-12">
             <a class="bg-red-600 py-2 px-2 text-white font-semibold ">Infographic</a>
-            <img src="{{ asset('assets/infographic-fire.jpeg') }}" alt="Mapbiomas Indonesia - Fire" class="w-full h-full mt-4">
+            <img src="{{ asset('assets/infographic.jpg') }}" alt="Mapbiomas Indonesia - Fire" class="w-full h-full mt-4">
          </div>
 
-        <!-- collaboration -->
-        <div class="mt-12  border-t border-gray-300 max-w-6xl mx-auto px-4">
-            <div class="justify-between flex sm:flex-row flex-col ">
-                <div class="mt-6 space-y-4">
-                    <h2 class="text-xl sm:text-left text-center text-red-500">
-                        An Initiative of:                </h2>
-                    <a href="https://auriga.or.id/" target="_blank"><img class="mt-4 sm:mx-0 mx-auto h-10" src="https://mapbiomas.nusantara.earth/assets/images/AurigaPNG.png" alt=""></a>
-                </div>
-                <div class="mt-6 space-y-4">
-                    <h2 class="text-xl sm:text-left text-center text-red-500">
-                        Collaboration:                </h2>
-                    <div class="flex space-x-4 flex-wrap justify-center">
-                        <a href="https://www.jeratpapua.org/" target="_blank">
-                            <img src="https://mapbiomas.nusantara.earth/assets/images/logo2_color.png" alt="" class="h-12">
-                        </a>
-                        <a href="https://saveourborneo.org/" target="_blank">
-                            <img src="https://mapbiomas.nusantara.earth/assets/images/logo3_color.png" alt="" class="h-12">
-                        </a>
-                        <a href="http://greenofborneo.id/" target="_blank">
-                            <img src="https://mapbiomas.nusantara.earth/assets/images/logo4_color.png" alt="" class="h-12">
-                        </a>
-                        <a href="https://www.haka.or.id/" target="_blank">
-                            <img src="https://mapbiomas.nusantara.earth/assets/images/logo5-x.png" alt="" class="h-12">
-                        </a>
-                        <a href="http://mnukwarpapua.id/"><img src="https://mapbiomas.nusantara.earth/assets/images/logo6-x.png" alt="" class="h-12">
-                        </a>
-                        <a href="https://hutaninstitute.or.id/" target="_blank">
-                            <img src="https://mapbiomas.nusantara.earth/assets/images/logo7-x.png" alt="" class="h-12">
-                        </a>
-                        <a href="http://yayasangenesisbengkulu.or.id/" target="_blank">
-                            <img src="https://mapbiomas.nusantara.earth/assets/images/logo8-x.png" alt="" class="h-12">
-                        </a>
-                        <a href="https://komiu.id/" target="_blank">
-                            <img src="https://mapbiomas.nusantara.earth/assets/images/logo9-x.png" alt="" class="h-12">
-                        </a>
-                        <a href="http://sampankalimantan.id/" target="_blank">
-                            <img src="https://mapbiomas.nusantara.earth/assets/images/logo10-x.png" alt="" class="h-12">
-                        </a>
-                    </div>
-                </div>
-                <div class="mt-6 space-y-4">
-                    <h2 class="text-xl sm:text-left text-center text-red-500">
-                        Supported by:                </h2>
-                    <div class="flex space-x-4 justify-center">
-                        <a href="https://mapbiomas.org/" target="_blank">
-                            <img src="https://mapbiomas.nusantara.earth/assets/images/logo11-x.png" alt="" class="h-12">
-                        </a>
-                        <a href="https://woods-wayside.org/" target="_blank">
-                            <img src="https://mapbiomas.nusantara.earth/assets/images/logo12-x.png" alt="" class="h-12">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
        @include('partials.footer')
 @endsection
