@@ -74,7 +74,7 @@
                     <p class="border-b border-gray-300"></p>
                 </div>
                 <div class=" px-4">
-                    <a href=""  class="mb-4 px-4 inline-block  leading-5 text-white  font-semibold ">initiatives<a>
+                    <a href="{{ route('downloads', [app()->getLocale()]) }}"  class="mb-4 px-4 inline-block  leading-5 text-white  font-semibold ">downloads<a>
                     <p class="border-b border-gray-300"></p>
                 </div>
 

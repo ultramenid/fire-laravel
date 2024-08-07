@@ -10,7 +10,7 @@
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
                 </a>
-            <div class="absolute mt-8 z-20 bg-white px-2 py-2 flex flex-col space-y-2 w-40 border-red-600 border-b" x-show="pages" x-cloak style="display: none !important">
+            <div class="absolute mt-8 z-20 bg-white px-2 py-2 flex flex-col space-y-2 w-52 border-red-600 border-b" x-show="pages" x-cloak style="display: none !important">
                 <a href="https://platform.indonesia.mapbiomas.org/fogo" class="text-sm mr-6">access the platform</a>
                 <a href="{{ route('termsofuse', [app()->getLocale()]) }}" class="text-sm mr-6">terms of use</a>
             </div>
@@ -29,6 +29,6 @@
             </div>
         </div>
         <a class="text-red-600">news & event</a>
-        <a class="text-red-600">initiatives</a>
+        <a href="{{ route('downloads', [app()->getLocale()]) }}" class="text-red-600">downloads</a>
     </div>
 </div>
