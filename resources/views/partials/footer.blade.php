@@ -5,7 +5,7 @@
                     <h1>Co-creators</h1>
                     <div class="flex justify-between w-full flex-wrap">
                         <a href="https://auriga.or.id/" target="_blank" >
-                            <img class="h-10" src="https://mapbiomas.nusantara.earth/assets/images/AurigaPNG.png" alt="">
+                            <img class="h-10 mt-2" src="https://mapbiomas.nusantara.earth/assets/images/AurigaPNG.png" alt="">
                         </a>
                         <a href="https://www.jeratpapua.org/" target="_blank" >
                             <img src="https://mapbiomas.nusantara.earth/assets/images/logo2_color.png" alt="" class="h-12 ">
@@ -56,10 +56,10 @@
  <div class="bg-gray-500 border-t-4 border-red-500 mt-20 ">
     <div class="flex sm:flex-row flex-col sm:gap-10 gap-2 max-w-6xl mx-auto px-4 py-7">
         <a class="text-white">about</a>
-        <a class="text-white">faq</a>
+        <a class="text-white">FAQ</a>
         <a class="text-white">map & data</a>
         <a class="text-white">methodology</a>
         <a class="text-white">news & event</a>
-        <a class="text-white">Inisiatif</a>
+        <a class="text-white">downloads</a>
     </div>
  </div>
