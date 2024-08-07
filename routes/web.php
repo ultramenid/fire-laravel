@@ -20,6 +20,7 @@ Route::middleware([setLanguage::class])->group(function () {
         Route::get('/termsofuse', [PagesController::class, 'termsofuse'])->name('termsofuse');
         Route::get('/faq', [FaqController::class, 'listfaq'])->name('faq');
         Route::get('/downloads', [PagesController::class, 'downloads'])->name('downloads');
+        Route::get('/atbd', [PagesController::class, 'atbd'])->name('atbd');
 
     });
 });
