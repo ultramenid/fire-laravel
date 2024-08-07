@@ -51,8 +51,8 @@
                         </svg>
                     </div>
                     <div class="bg-white px-4 py-3 mb-4 flex flex-col space-y-2 rounded" x-show="open1" style="display: none !important;">
-                        <a href="https://platform.indonesia.mapbiomas.org/fogo" class="text-sm mr-6">access the platform</a>
                         <a href="{{ route('termsofuse', [app()->getLocale()]) }}" class="text-sm mr-6">terms of use</a>
+                        <a href="https://platform.indonesia.mapbiomas.org/fogo" class="text-sm mr-6">platform/map</a>
                     </div>
                     <p class="border-b border-gray-300"></p>
                 </div>
@@ -65,7 +65,8 @@
                     </div>
                     <div class="bg-white px-4 py-3 mb-4 flex flex-col space-y-2 rounded" x-show="open1" style="display: none !important;">
 
-                        <a href="{{ route('refrencemap', [app()->getLocale()]) }}" class="text-sm mr-6">refrence map</a>
+                        <a href="{{ route('refrencemap', [app()->getLocale()]) }}" class="text-sm mr-6">reference map</a>
+                        <a href="{{ route('atbd', [app()->getLocale()]) }}" class="text-sm mr-6">ATBD</a>
                     </div>
                     <p class="border-b border-gray-300"></p>
                 </div>
