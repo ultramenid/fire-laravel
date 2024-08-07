@@ -26,7 +26,7 @@
      <!-- hero -->
       <div class="relative mt-2">
         <img src="assets/hero-fire.png" alt="Mapbiomas Fire - Indonesia" class="sm:h-[70vh] h-[40vh] w-full object-top object-cover relative">
-        <a class="absolute bg-red-600 text-white sm:bottom-32 bottom-16 sm:left-72 left-5 px-4 py-1 font-semibold">Access The Platform</a>
+        <a href="https://platform.indonesia.mapbiomas.org/fogo" class="absolute bg-red-600 text-white sm:bottom-32 bottom-16 sm:left-72 left-5 px-4 py-1 font-semibold">Access The Platform</a>
       </div>
 
       {{-- <!-- content -->

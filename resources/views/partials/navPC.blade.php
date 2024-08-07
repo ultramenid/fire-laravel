@@ -4,7 +4,7 @@
     <div class="sm:flex hidden gap-10 items-center">
         <a href="{{ route('about', [app()->getLocale()]) }}" class="text-red-600">about</a>
         <a href="{{ route('faq', [app()->getLocale()]) }}" class="text-red-600">FAQ</a>
-        <a class="text-red-600">map & data</a>
+        <a href="https://platform.indonesia.mapbiomas.org/fogo" class="text-red-600">map & data</a>
 
         <div class="flex-col flex" x-data="{pages:false}">
             <a @click="pages = ! pages" @click.away="pages=false"  class=" text-red-600 cursor-pointer inline-flex   items-center " >methodology
