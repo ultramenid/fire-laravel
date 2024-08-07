@@ -60,16 +60,16 @@
                     </div>
                 </template>
                 <template x-if="open==='{{$item->id}}'">
-                    <div class="<?php if($item->id == 1){ echo 'border-t border-b';}else{ echo'border-b'; } ?> cursor-pointer  py-4 px-4 "
+                    <div class="<?php if($item->id == 1){ echo 'border-t border-b';}else{ echo'border-b'; } ?>   py-4 px-4 "
                         x-data="{ icon:false}"
                         style="border-color: #000000"
-                        @click="open = ''"
+
                         @mouseover="icon=true"
                         @mouseover.away="icon=false"
                         :class="{ 'bg-gray-50' : open === '{{$item->id}}' }"
                         >
                         <div class="flex justify-between space-x-10">
-                            <a class=" text-black font-semibold" >
+                            <a class=" text-black font-semibold cursor-pointer" @click="open = ''">
                                 {!! $item->question !!}
                             </a>
                             <svg x-show="icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
