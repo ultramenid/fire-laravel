@@ -28,7 +28,7 @@
     </div>
 
     <div class="sm:px-0 px-4">
-        <div class="max-w-4xl mx-auto bg-white relative  -mt-20 z-20 rounded sm:px-12 px-4 sm:py-12 py-4 border-b border-red-600 min-h-[40vh] text-sm">
+        <div class="max-w-4xl mx-auto bg-white relative  -mt-20 z-20 rounded sm:px-6 px-4 sm:py-12 py-4 border-b border-red-600 min-h-[40vh] text-sm">
             <a class="text-xl font-semibold ">Methodology atbd</a>
 
             <p class="mt-4">Mapbiomas Indonesia Fire koleksi 1.0 menyajikan data/peta lahan terbakar di Indonesia pada tahun 2013 hingga 2023. Data dan/atau peta tersebut berupa kebakaran tahunan, kebakaran bulanan, frekuensi kebakaran, dan akumulasi lahan terbakar. Data-data tersebut juga tersedia sesuai dengan kelas penutupan dan penggunaan lahan berdasarkan MapBiomas Indonesia Landy Koleksi 2.0.             </p>
