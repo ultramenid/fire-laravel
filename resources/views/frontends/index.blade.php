@@ -93,35 +93,27 @@
         <div class=" bg-red-50 mt-12">
             <div class="max-w-6xl mx-auto px-4 py-6">
                 <a class="bg-red-600 p-2 text-white font-semibold sm:text-base text-xs">How Mapbiomas Fire Works</a>
+                <div class="w-full sm:flex hidden justify-center  mt-12 ">
+                    <img src="{{ asset('assets/how-we-work.png') }}" alt="Mapbiomas Fire" class="w-full h-full">
+                </div>
                 <div class="flex sm:flex-col flex-row justify-center mt-12 gap-4">
                     <div class="flex">
-                        <div class="border border-b-0 border-l-red-600 border-r-red-600 border-t-red-600 w-[380px] ml-[460px] h-20 relative sm:block hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 absolute -bottom-[8px] -right-[8px] ">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                            </svg>
-                        </div>
-                        <div class="border border-b-red-600 border-l-red-600 border-r-0 border-t-red-600 h-[270px] mt-[335px] w-4 relative sm:hidden block">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 absolute -bottom-[8px] -right-[8px] ">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                              </svg>
-
-                        </div>
                     </div>
 
-                    <div class="flex sm:flex-row flex-col gap-1 items-top">
+                    <div class="sm:hidden flex sm:flex-row flex-col gap-1 items-top">
                         <div class="w-44">
                             <div class="px-1 py-1 border border-red-600 ">
                                 <img src="{{ asset('assets/mosaic.png') }}" alt="Mapbiomas Fire" class="h-24">
                             </div>
-                            <p class="text-sm text-center ">1. Mosaik (landsat tahunan)</p>
+                            <p class="text-sm text-center ">1. Mosaik </p>
                         </div>
 
                         <div class="w-44">
                             <div class="px-1 py-1 border border-red-600 bg-white">
                                 <img src="{{ asset('assets/region.png') }}" alt="Mapbiomas Fire" class="h-24 object-scale-down">
                             </div>
-                            <p class="text-sm text-center ">2. Menentukan Regio</p>
+                            <p class="text-sm text-center ">2. Region</p>
                         </div>
 
                         <div class="w-44">
@@ -135,14 +127,14 @@
                             <div class="px-1 py-1 border border-red-600">
                                 <img src="{{ asset('assets/postclassification.png') }}" alt="Mapbiomas Fire" class="h-24">
                             </div>
-                            <p class="text-center text-sm">4. Klasifikasi ( dengan Deep Neural Network )</p>
+                            <p class="text-center text-sm">4. Klasifikasi ( Deep Learning )</p>
                         </div>
 
                         <div class="w-44">
                             <div class="px-1 py-1 border border-red-600">
                                 <img src="{{ asset('assets/evaluasi.png') }}" alt="Mapbiomas Fire" class="h-24">
                             </div>
-                            <p class="text-sm text-center ">5. Evaluasi dan Komparasi (dengan referensi)</p>
+                            <p class="text-sm text-center ">5. Komparasi dengan peta-referensi</p>
                         </div>
 
                         <div class="w-44">
@@ -154,16 +146,11 @@
 
                     </div>
                     <div>
-                        <div class="border border-t-0 border-l-red-600 border-r-red-600 border-b-red-600 w-[380px] ml-[460px] h-20 sm:block hidden relative">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 absolute -top-[8px] -left-[8px] ">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-                              </svg>
-                        </div>
-                        <div class="border border-b-red-600 border-l-0 border-r-red-600 border-t-red-600 h-[270px] mt-[335px] w-4 relative sm:hidden block">
+
+                        <div class="border-dashed border border-b-red-600 border-l-0 border-r-red-600 border-t-red-600 h-[270px] mt-[335px] w-4 relative sm:hidden block">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 absolute -top-[8px] -left-[8px] ">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                               </svg>
-
 
                         </div>
 
