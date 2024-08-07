@@ -43,10 +43,6 @@
                     <a href="{{ route('faq', [app()->getLocale()]) }}"  class="mb-4 px-4 inline-block  leading-5 text-white  font-semibold ">FAQ<a>
                     <p class="border-b border-gray-300"></p>
                 </div>
-                <div class=" px-4">
-                    <a href="https://platform.indonesia.mapbiomas.org/fogo"  class="mb-4 px-4 inline-block  leading-5 text-white  font-semibold ">map & data<a>
-                    <p class="border-b border-gray-300"></p>
-                </div>
                 <div class=" px-4" x-data="{open1: false}">
                     <div class="flex items-center   px-4 mb-2" @click=" open1 =! open1">
                         <a class=" text-base leading-5 text-white font-semibold ">map & data </a>
@@ -56,6 +52,7 @@
                     </div>
                     <div class="bg-white px-4 py-3 mb-4 flex flex-col space-y-2 rounded" x-show="open1" style="display: none !important;">
                         <a href="https://platform.indonesia.mapbiomas.org/fogo" class="text-sm mr-6">access the platform</a>
+                        <a href="{{ route('termsofuse', [app()->getLocale()]) }}" class="text-sm mr-6">terms of use</a>
                     </div>
                     <p class="border-b border-gray-300"></p>
                 </div>
@@ -67,7 +64,7 @@
                         </svg>
                     </div>
                     <div class="bg-white px-4 py-3 mb-4 flex flex-col space-y-2 rounded" x-show="open1" style="display: none !important;">
-                        <a href="{{ route('termsofuse', [app()->getLocale()]) }}" class="text-sm mr-6">terms of use</a>
+
                         <a href="{{ route('refrencemap', [app()->getLocale()]) }}" class="text-sm mr-6">refrence map</a>
                     </div>
                     <p class="border-b border-gray-300"></p>
