@@ -54,12 +54,36 @@
 
  <!-- footer -->
  <div class="bg-gray-500 border-t-4 border-red-500 mt-20 ">
-    <div class="flex sm:flex-row flex-col sm:gap-10 gap-2 max-w-6xl mx-auto px-4 py-7">
-        <a class="text-white">about</a>
-        <a class="text-white">FAQ</a>
-        <a class="text-white">map & data</a>
-        <a class="text-white">methodology</a>
-        <a class="text-white">news & event</a>
-        <a class="text-white">downloads</a>
+    <div class="flex sm:flex-row flex-col sm:gap-10 gap-2  py-4 mt-4 max-w-6xl mx-auto px-4">
+        <div class="flex flex-col">
+            <a href="{{ route('about', app()->getlocale() )}}" class="text-white">about</a>
+
+        </div>
+        <div class="flex flex-col">
+            <a href="{{ route('faq', app()->getlocale() )}}" class="text-white">FAQ</a>
+        </div>
+
+        <div class="flex flex-col">
+            <a class="text-white">map & data</a>
+            <a href="{{ route('termsofuse', app()->getlocale() )}}" class=" text-white">term of use</a>
+            <a href="https://platform.indonesia.mapbiomas.org/fogo" class="text-white">platform & map</a>
+        </div>
+
+        <div class="flex flex-col">
+            <a class="text-white">methodology</a>
+            <a href="{{ route('atbd', app()->getlocale() )}}" class="text-white ">ATBD</a>
+            <a href="{{ route('refrencemap', app()->getlocale() )}}" class="text-white">reference map</a>
+        </div>
+
+        <div class="flex flex-col">
+            <a class="text-white">news & event</a>
+        </div>
+
+        <div class="flex flex-col">
+            <a href="{{ route('downloads', app()->getlocale() )}}" class="text-white" class="font-semibold">Downloads</a>
+        </div>
+
     </div>
+
+
  </div>
