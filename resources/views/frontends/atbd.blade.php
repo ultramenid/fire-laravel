@@ -32,7 +32,7 @@
             <a class="text-xl font-semibold ">Methodology atbd</a>
 
             <p class="mt-4">Mapbiomas Indonesia Fire koleksi 1.0 menyajikan data/peta lahan terbakar di Indonesia pada tahun 2013 hingga 2023. Data dan/atau peta tersebut berupa kebakaran tahunan, kebakaran bulanan, frekuensi kebakaran, dan akumulasi lahan terbakar. Data-data tersebut juga tersedia sesuai dengan kelas penutupan dan penggunaan lahan berdasarkan MapBiomas Indonesia Landy Koleksi 2.0.             </p>
-            <p>Metodologi yang digunakan disajikan dalam <a href="https://fire.mapbiomas.id/assets/ATBD-Mapbiomas-fire-koleksi-1.pdf" class="underline font-semibold">ATBD (Algorithm Theoretical Basis Documents)</a> </p>
+            <p>Metodologi yang digunakan disajikan dalam <a  class="text-red-600 underline"  href="https://fire.mapbiomas.id/assets/ATBD-Mapbiomas-fire-koleksi-1.pdf" class="underline font-semibold">ATBD (Algorithm Theoretical Basis Documents)</a> </p>
 
             <h1 class="font-semibold mt-4">Ringkasan Methodology</h1>
             <p class="mt-4">Kami menggunakan seluruh Koleksi Landsat 8 yang tersedia dan Deep Neural Network (DNN) model untuk mendeteksi dan memetakan kebakaran secara regional antara Januari 2013 hingga Desember 2023. DNN model menggunakan kecerdasan buatan dan algoritma machine learning untuk melakukan klasifikasi deep learning terhadap fenomena yang kompleks sehingga menghasilkan hasil yang lebih baik, termasuk untuk pemetaan kebakaran (Langford, 2018). </p>
