@@ -94,7 +94,7 @@
             <div class="max-w-6xl mx-auto px-4 py-6">
                 <a class="bg-red-600 p-2 text-white font-semibold sm:text-base text-xs">How Mapbiomas Fire Works</a>
                 <div class="w-full sm:flex hidden justify-center  mt-12 ">
-                    <img src="{{ asset('assets/how-we-work.png') }}" alt="Mapbiomas Fire" class="w-full h-full">
+                    <img src="{{ asset('assets/how-we-work-3-2.png') }}" alt="Mapbiomas Fire" class="w-full h-full">
                 </div>
                 <div class="flex sm:flex-col flex-row justify-center mt-12 gap-4">
                     <div class="flex">
