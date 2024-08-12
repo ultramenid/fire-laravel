@@ -44,7 +44,7 @@
                 <li class="ml-6"><strong>Koleksi training sample:</strong> pengumpulan nilai spektral kebakaran dan non-kebakaran dikumpulkan dari mosaic citra Landsat tahunan sebagai training sample.</li>
                 <li class="ml-6"><strong>Melatih dan mengembangkan klasifikasi kebakaran pada DNN prediction model:</strong> DNN model dilatih menggunakan sampel yang telah dikumpulkan dan citra tahunan local server. </li>
                 <li class="ml-6"><strong>Post-klasifikasi:</strong> pada hasil klasifikasi area terbakar dilakukan masking dan menerapkan spasial filter untuk meningkatkan akurasi dan mengurangi kesalahan pada hasil klasifikasi. </li>
-                <li class="ml-6"><strong>Evaluasi dan validasi hasil klasifikasi kebakaran dengan pengamatan visual.</strong> Hasil dari klasifikasi divalidasi dengan menggunakan data referensi, validasi ini  menggunakan pengecekan visual terhadap peta areal terbakar untuk memastikan akurasi data yang ada.                </li>
+                <li class="ml-6"><strong>Evaluasi dan validasi hasil klasifikasi kebakaran dengan pengamatan visual.</strong> Hasil dari klasifikasi divalidasi dengan menggunakan data referensi. Validasi ini  menggunakan pengecekan visual terhadap peta areal terbakar untuk memastikan akurasi data yang ada.                </li>
             </ul>
         </div>
     </div>
