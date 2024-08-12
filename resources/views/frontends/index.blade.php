@@ -127,7 +127,7 @@
                             <div class="px-1 py-1 border border-red-600">
                                 <img src="{{ asset('assets/postclassification.png') }}" alt="Mapbiomas Fire" class="h-24">
                             </div>
-                            <p class="text-center text-sm">4. Klasifikasi ( Deep Learning )</p>
+                            <p class="text-center text-sm">4. Klasifikasi ( <i>deep learning</i> )</p>
                         </div>
 
                         <div class="w-44">

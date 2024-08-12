@@ -54,7 +54,7 @@
 
  <!-- footer -->
  <div class="bg-gray-500 border-t-4 border-red-500 mt-20 ">
-    <div class="flex sm:flex-row flex-col sm:gap-10 gap-2  py-4 mt-4 max-w-6xl mx-auto px-4">
+    <div class="flex sm:flex-row flex-col gap-8  py-4 mt-4 max-w-6xl mx-auto px-4">
         <div class="flex flex-col">
             <a href="{{ route('about', app()->getlocale() )}}" class="text-white">about</a>
 
@@ -80,7 +80,7 @@
         </div>
 
         <div class="flex flex-col">
-            <a href="{{ route('downloads', app()->getlocale() )}}" class="text-white" class="font-semibold">Downloads</a>
+            <a href="{{ route('downloads', app()->getlocale() )}}" class="text-white" class="font-semibold">downloads</a>
         </div>
 
     </div>
