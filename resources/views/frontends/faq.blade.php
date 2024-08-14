@@ -28,7 +28,7 @@
     </div>
 
     <div class="sm:px-0 px-4" x-data="{ open: '' }">
-        <div class="max-w-4xl mx-auto bg-white relative  -mt-20 z-20 rounded sm:px-6 px-4 sm:py-12 py-4 border-b border-red-600 min-h-[40vh]">
+        <div class="max-w-3xl mx-auto bg-white relative  -mt-20 z-20 rounded sm:px-6 px-4 sm:py-12 py-4 border-b border-red-600 min-h-[40vh]">
             <h1 class="text-xl font-bold mb-6">FAQ</h1>
 
             <?php  foreach($data as $item) : ?>
@@ -54,7 +54,7 @@
                             </svg>
                         </div>
                         <div x-show="open==='{{$item->id}}'" class="mt-2">
-                            <div  class="mt-6 prose max-w-none text-sm px-4" >
+                            <div  class="mt-6 prose max-w-none text-sm px-4 leading-relaxed" >
                                 {!! $item->answer !!}
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                             </svg>
                         </div>
                         <div x-show="open==='{{$item->id}}'" class="mt-2">
-                            <div  class="mt-6 prose max-w-none text-sm " >
+                            <div  class="mt-6 prose max-w-none text-sm leading-relaxed" >
                                 {!! $item->answer !!}
                             </div>
                         </div>
