@@ -54,7 +54,7 @@
                             </svg>
                         </div>
                         <div x-show="open==='{{$item->id}}'" class="mt-2">
-                            <div  class="mt-6 prose max-w-none text-sm px-4 leading-relaxed break-all">
+                            <div  class="mt-6 prose max-w-none text-sm px-4 leading-relaxed break-words">
                                 {!! $item->answer !!}
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                             </svg>
                         </div>
                         <div x-show="open==='{{$item->id}}'" class="mt-2">
-                            <div  class="mt-6 prose max-w-none text-sm leading-relaxed break-all" >
+                            <div  class="mt-6 prose max-w-none text-sm leading-relaxed break-words" >
                                 {!! $item->answer !!}
                             </div>
                         </div>
