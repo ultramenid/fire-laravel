@@ -9,10 +9,10 @@
 <meta name="keywords" content="mapbiomas fire, mapbiomas indonesia, mapbiomas fire, mapbiomas indonesia , deforestasi, shp, auriga nusantara, GIS, mapbiomas fire, mapbiomas indonesia , tutupan lahan, konsensi, consession, hgu, iup, kawasan hutan, land use, land status, google earth engine, pbph, kebakaran hutan">
 <link rel="canonical" href="{{url()->full()}}"/>
 <meta name="robots" content="index, follow">
-<meta name="author" content="mapbiomas fire, mapbiomas indonesia ">
+<meta name="author" content="mapbiomas fire ">
 <meta name="googlebot-news" content="index, follow, follow" />
 <meta name="googlebot" content="index, follow, follow" />
-<meta name="coverage" content="mapbiomas fire, mapbiomas indonesia " >
+<meta name="coverage" content="mapbiomas fire " >
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
