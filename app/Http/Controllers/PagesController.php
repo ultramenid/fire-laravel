@@ -18,7 +18,7 @@ class PagesController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, contentID as content';
         }else{
-            return 'id, contentID as content';
+            return 'id, contentEN as content';
         }
     }
 

@@ -5,17 +5,8 @@
 @endsection
 
 @section('content')
-    {{-- lang switch
-    <div class="max-w-6xl mx-auto  sm:block hidden">
-        <div class="flex justify-between px-3">
-            <a></a>
-            <div class="text-red-400 px-12 py-1 bg-red-600 text-sm rounded-b flex space-x-4">
-                <a href="{{ route(Route::currentRouteName(), 'en') }}" class=" @if(App::getLocale() == 'en') text-white @endif  ">English</a>
-                <a href="{{ route(Route::currentRouteName(), 'id') }}" class="@if(App::getLocale() == 'id') text-white @endif">Indonesia</a>
-            </div>
-            </div>
-        </div>
-    </div> --}}
+
+    @include('partials.langswitcher')
 
     @include('partials.navMobile')
     @include('partials.navPC')
@@ -26,7 +17,7 @@
      <!-- hero -->
       <div class="relative mt-2">
         <img src="assets/hero-fire.png" alt="Mapbiomas Fire - Indonesia" class="sm:h-[70vh] h-[40vh] w-full object-top object-cover relative">
-        <a href="https://platform.indonesia.mapbiomas.org/fogo" class="absolute bg-red-600 text-white sm:bottom-32 bottom-16 sm:left-72 left-5 px-4 py-1 font-semibold">Access The Platform</a>
+        <a href="https://platform.indonesia.mapbiomas.org/fogo" class="absolute bg-red-600 text-white sm:bottom-32 bottom-16 sm:left-[22rem] left-5 px-4 py-1 font-semibold">Access The Platform</a>
       </div>
 
 

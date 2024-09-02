@@ -31,7 +31,7 @@ class FaqController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, questionID as question, answerID as answer';
         }else{
-            return 'id, questionID as question, answerID as answer';
+            return 'id, questionEN as question, answerEN as answer';
         }
     }
     public function getFAQ(){
