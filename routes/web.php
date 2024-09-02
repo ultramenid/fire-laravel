@@ -36,6 +36,8 @@ Route::middleware([checkSession::class])->group(function () {
     Route::get('/cms/addnews', [NewsController::class, 'add']);
     Route::get('/cms/editnews/{id}', [NewsController::class, 'edit']);
     Route::get('/cms/pageabout', [PagesController::class, 'cmsabout']);
+    Route::get('/cms/termofuse', [PagesController::class, 'cmstermofuse']);
+    Route::get('/cms/cmsatbd', [PagesController::class, 'cmsatbd']);
 
     Route::group(['prefix' => '/cms/fire-filemanager'], function () {
         \UniSharp\LaravelFilemanager\Lfm::routes();

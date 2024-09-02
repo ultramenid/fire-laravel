@@ -20,7 +20,7 @@
         <div class="max-w-3xl  mx-auto bg-white relative  -mt-20 z-20 rounded sm:px-6 px-4 sm:py-12 py-4 border-b border-red-600 min-h-[40vh] text-[15px]">
             <a class="text-xl font-semibold ">ATBD</a>
 
-            <p class="mt-4 leading-relaxed">Mapbiomas Indonesia | FIRE 1.0 menyajikan data dan peta area terbakar di Indonesia sepanjang 2013-2023, yang diperoleh dengan menganalisis citra satelit Landsat 8 melalui proses komputasi <i>deep learning</i> Deep Neural Network (DNN). Model DNN memaksimalkan kecerdasan buatan (<i>artificial intelligence</i>) dan algoritma <i> machine learning</i> untuk mengklasifikasi fenomena kompleks demi performa yang lebih tinggi, termasuk pemetaan area terbakar (Langford, 2018).</p>
+            {{-- <p class="mt-4 leading-relaxed">Mapbiomas Indonesia | FIRE 1.0 menyajikan data dan peta area terbakar di Indonesia sepanjang 2013-2023, yang diperoleh dengan menganalisis citra satelit Landsat 8 melalui proses komputasi <i>deep learning</i> Deep Neural Network (DNN). Model DNN memaksimalkan kecerdasan buatan (<i>artificial intelligence</i>) dan algoritma <i> machine learning</i> untuk mengklasifikasi fenomena kompleks demi performa yang lebih tinggi, termasuk pemetaan area terbakar (Langford, 2018).</p>
             <p class="mt-4 leading-relaxed">Citra satelit diproses pada Google Earth Engine (GEE) guna menghasilkan mosaik untuk digunakan mengukur nilai spektral area terbakar (dan non-terbakar) yang kemudian dijadikan sebagai dasar pengumpulan <i>training samples</i>. Baik <i>training samples</i> maupun mosaik ditempatkan pada penyimpanan berbasis Google (<i>google drive</i>) yang kemudian diunduh ke server lokal. Kemudian, <i>training samples</i> dijadikan sebagai material untuk melatih DNN mengenali area terbakar pada mosaik.</p>
             <p class="mt-4 leading-relaxed">Pendekatan ini mengkombinasi kemampuan mumpuni <i>deep learning</i> memindai citra satelit secara komprehensif, sehingga menghadirkan peta area terbakar Indonesia yang rinci dan dapat diandalkan. Pengolahan citra dan prosedur klasifikasi pemetaan area terbakar tersebut mengikuti tahapan berikut:</p>
 
@@ -36,7 +36,10 @@
                 <li class="ml-6 leading-relaxed"><strong>Validasi</strong> Area teridentifikasi divalidasi dengan membandingkannya dengan <a href="https://fire.mapbiomas.id/id/refrencemap" target="_blank" class="underline text-red-600">data/peta referensi</a>. Pengecekan visual (<i>visual check</i>) dilakukan, terutama terhadap area yang berbeda (<i>disagreement area</i>), guna mengetahui keakuratan area teridentifikasi tersebut.</li>
             </ul>
 
-            <p class="mt-4 leading-relaxed"> Metodologi MapBiomas Indonesia | FIRE Koleksi 1.0 selengkapnya tersaji pada <a href="https://fire.mapbiomas.id/assets/ATBD-Mapbiomas-fire-koleksi-1.pdf" target="_blank" class="underline text-red-600">Algorithm Theoretical Basis Documents</a> (ATBD).</p>
+            <p class="mt-4 leading-relaxed"> Metodologi MapBiomas Indonesia | FIRE Koleksi 1.0 selengkapnya tersaji pada <a href="https://fire.mapbiomas.id/assets/ATBD-Mapbiomas-fire-koleksi-1.pdf" target="_blank" class="underline text-red-600">Algorithm Theoretical Basis Documents</a> (ATBD).</p> --}}
+            <div class="prose max-w-none mt-4 sm:text-base text-sm leading-relaxed">
+                {!! $data->content !!}
+            </div>
         </div>
     </div>
 

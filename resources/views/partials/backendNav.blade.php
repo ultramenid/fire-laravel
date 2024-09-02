@@ -21,6 +21,9 @@
                 </a>
                 <div class=" flex flex-col space-y-3  w-40  rounded absolute sm:mt-10 mt-10 z-20 bg-gray-200 dark:bg-newgray-700  px-4 py-2" x-show="pages" x-cloak style="display: none !important">
                     <a  href="{{url('/cms/pageabout')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">about</a>
+                    <a  href="{{url('/cms/termofuse')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">termofuse</a>
+                    <a  href="{{url('/cms/cmsatbd')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">ATBD</a>
+
                 </div>
             </div>
 
