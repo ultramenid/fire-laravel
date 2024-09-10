@@ -109,7 +109,7 @@
                 <a class="bg-red-600 p-2 text-white font-semibold sm:text-base text-xs">How Mapbiomas Fire Works</a>
                 <div class="w-full sm:flex hidden justify-center  mt-12 ">
                     @if (app()->getLocale() == 'en')
-                        <img src="{{ asset('assets/fire-web_eng-3.png') }}" alt="Mapbiomas Fire" class="w-full h-full">
+                        <img src="{{ asset('assets/how-we-work-4.png') }}" alt="Mapbiomas Fire" class="w-full h-full">
                     @else
                         <img src="{{ asset('assets/how-we-work-3-2.png') }}" alt="Mapbiomas Fire" class="w-full h-full">
                     @endif
