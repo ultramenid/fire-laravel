@@ -180,7 +180,11 @@
         <!-- infographic -->
          <div class="max-w-6xl mx-auto px-4 mt-12">
             <a class="bg-red-600 py-2 px-2 text-white font-semibold ">Infographic</a>
-            <img src="{{ asset('assets/infographic.jpg') }}" alt="Mapbiomas Indonesia - Fire" class="w-full h-full mt-4">
+            @if (app()->getLocale() == 'en')
+                <img src="{{ asset('assets/Infographic_EN.jpeg') }}" alt="Mapbiomas Indonesia - Fire" class="w-full h-full mt-4">
+            @else
+                <img src="{{ asset('assets/infographic.jpg') }}" alt="Mapbiomas Indonesia - Fire" class="w-full h-full mt-4">
+            @endif
          </div>
 
 
