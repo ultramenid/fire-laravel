@@ -5,9 +5,11 @@
 @endsection
 
 @section('content')
-    @include('partials.langswitcher')
+    {{-- @include('partials.langswitcher') --}}
     @include('partials.navMobile')
-    @include('partials.navPC')
+    <div class="bg-white sticky top-0 z-50">
+        @include('partials.navPC')
+    </div>
     <div class="border-b-[0.4px] border-red-500"></div>
 
     {{-- heroPage --}}

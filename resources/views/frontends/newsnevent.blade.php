@@ -11,7 +11,7 @@
     <div class="bg-white sticky top-0 z-50">
         @include('partials.navPC')
     </div>
-    <div class="border-b-[0.4px] border-red-500"></div>
+    <div class="border-b-[0.4px] border-landy"></div>
 
     {{-- heroPage --}}
 
@@ -20,11 +20,9 @@
     </div>
 
     <div class="sm:px-0 px-4">
-        <div class="max-w-3xl mx-auto bg-white relative  -mt-20 z-20 rounded sm:px-6 px-4 sm:py-12 py-4 border-b border-red-600 min-h-[40vh]">
-            <a class="text-xl font-semibold ">About</a>
-            <div class="prose max-w-none mt-4 sm:text-base text-sm leading-relaxed">
-                {!! optional($data)->content !!}
-            </div>
+        <div class="max-w-3xl mx-auto bg-white relative  -mt-20 z-20 rounded sm:px-6 px-4 sm:py-12 py-4 border-b border-landy min-h-[40vh]">
+
+            <livewire:frontend-News />
         </div>
     </div>
 

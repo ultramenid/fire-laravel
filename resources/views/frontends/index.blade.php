@@ -6,10 +6,12 @@
 
 @section('content')
 
-    @include('partials.langswitcher')
+    {{-- @include('partials.langswitcher') --}}
 
     @include('partials.navMobile')
-    @include('partials.navPC')
+    <div class="bg-white sticky top-0 z-50">
+        @include('partials.navPC')
+    </div>
 
     <!-- border -->
      <div class="border-b-[0.4px] border-red-500"></div>
@@ -22,86 +24,60 @@
 
 
 
-    {{-- <div class="max-w-6xl mx-auto flex sm:flex-row flex-col gap-5 px-4 mt-12">
-        <div class=" sm:w-9/12 w-full  ">
-            <a class="bg-red-600 px-4 py-1 text-white font-semibold">Video</a>
-            <Video src="{{ asset('assets/Mapbiomas_Fire_Launching.mp4') }}" controls class="mt-4 "></Video>
-        </div>
-        <div class="sm:w-3/12 w-full  ">
-            <a class="bg-red-600 px-4 py-1 text-white font-semibold ">Event</a>
-                <div class=" flex flex-col gap-6 mt-4">
-                    <div class="p-2 border border-red-200">
-                        <div  alt="" class="bg-red-200 h-40 w-full"></div>
-                    </div>
-                    <div class="p-2 border border-red-200">
-                        <div  alt="" class="bg-red-200 h-40 w-full"></div>
-                    </div>
-                </div>
-                <div class="flex justify-end mt-12">
-                    <a class="text-red-600 font-light">EXPLORE MORE</a>
-                </div>
-        </div>
-    </div> --}}
-
-      {{-- <!-- content -->
+   <!-- content -->
        <div class="max-w-6xl mx-auto flex sm:flex-row flex-col gap-5 px-4 mt-12">
             <div class=" sm:w-9/12 w-full  ">
-                <a class="bg-red-600 px-4 py-1 text-white font-semibold">News</a>
-                <div class="flex flex-row  scrollbar-hide overflow-x-scroll h-full   gap-4  snap-x snap-mandatory mt-4">
-                    <!-- card -->
-                    <div class="sm:flex-shrink flex-shrink-0 snap-center sm:w-4/12 w-9/12  ">
-                        <a  class="sm:w-7/12 w-full">
-                            <div  alt="" class="bg-red-200 h-44 w-full"></div>
-                        </a>
+                <a class="bg-red-600 px-4 py-1 text-white font-semibold capitalize">{{__('news') }}</a>
+                <div class="flex flex-row  h-full   gap-4  snap-x snap-mandatory mt-4">
+                    @foreach ($news as $item)
+                        <!-- card -->
+                        <div class="sm:flex-shrink flex-shrink-0 snap-center sm:6/12 w-full ">
+                            <a href="{{ route('detailnews', [app()->getLocale(), $item->id, $item->slug]) }}"  class="sm:w-7/12 w-full">
+                                <img src="{{ asset('storage/files/photos/'.$item->img) }}"  alt="{{ $item->title }}" class="bg-red-200 h-52 w-full" />
+                            </a>
 
-                        <a  class="md:mt-6 mt-3 font-semibold   flex-shrink-0 flex ">Technical experts review MapBiomas Indonesia Collection 1 methodology and results</a>
-                        <div class="mt-2 text-sm  font-light">
-                            Mapbiomas Indonesia involves technical experts in the field of Geographic Information System (GIS) to review the platform, methodology and data of the first collection of land cover maps
+                            <a href="{{ route('detailnews', [app()->getLocale(), $item->id, $item->slug]) }}" class="md:mt-6 mt-3 font-semibold flex-shrink-0 flex ">{{ $item->title }}</a>
+                            <div class="mt-2 text-sm  font-light">
+                                {{ $item->description }}
+                            </div>
                         </div>
-                    </div>
-                     <!-- card -->
-                     <div class="sm:flex-shrink flex-shrink-0 snap-center sm:w-4/12 w-9/12  ">
-                        <a  class="sm:w-7/12 w-full">
-                            <div  alt="" class="bg-red-200 h-44 w-full"></div>
-                        </a>
-
-                        <a  class="md:mt-6 mt-3 font-semibold   flex-shrink-0 flex ">Technical experts review MapBiomas Indonesia Collection 1 methodology and results</a>
-                        <div class="mt-2 text-sm  font-light">
-                            Mapbiomas Indonesia involves technical experts in the field of Geographic Information System (GIS) to review the platform, methodology and data of the first collection of land cover maps
-                        </div>
-                    </div>
-                     <!-- card -->
-                     <div class="sm:flex-shrink flex-shrink-0 snap-center sm:w-4/12 w-9/12  ">
-                        <a  class="sm:w-7/12 w-full">
-                            <div  alt="" class="bg-red-200 h-44 w-full"></div>
-                        </a>
-
-                        <a  class="md:mt-6 mt-3 font-semibold   flex-shrink-0 flex ">Technical experts review MapBiomas Indonesia Collection 1 methodology and results</a>
-                        <div class="mt-2 text-sm  font-light">
-                            Mapbiomas Indonesia involves technical experts in the field of Geographic Information System (GIS) to review the platform, methodology and data of the first collection of land cover maps
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
-                <div class="flex justify-end sm:-mt-16 mt-12">
+                <div class="sm:hidden flex justify-end mt-12">
                     <a class="text-red-600 font-light">EXPLORE MORE</a>
                 </div>
             </div>
             <div class="sm:w-3/12 w-full  ">
-                <a class="bg-red-600 px-4 py-1 text-white font-semibold ">Event</a>
-                <div class=" flex flex-col gap-6 mt-4">
-                    <div class="p-2 border border-red-200">
-                        <div  alt="" class="bg-red-200 h-40 w-full"></div>
-                    </div>
-                    <div class="p-2 border border-red-200">
-                        <div  alt="" class="bg-red-200 h-40 w-full"></div>
-                    </div>
+                <a class="bg-red-600 px-4 py-1 text-white font-semibold capitalize">Event</a>
+                <div class=" flex flex-col gap-4 mt-4">
+                    @foreach ($events as $item)
+                        <!-- card -->
+                        <div class="sm:flex-shrink flex-shrink-0 snap-center w-full  ">
+                            <a   class="sm:w-7/12 w-full">
+                                <img src="{{ asset('storage/files/photos/'.$item->img) }}"  alt="{{ $item->title }}" class="bg-red-200 h-36 w-full" />
+                            </a>
+                        </div>
+                    @endforeach
                 </div>
-                <div class="flex justify-end mt-12">
+                <div class="sm:hidden flex justify-end mt-12">
                     <a class="text-red-600 font-light">EXPLORE MORE</a>
                 </div>
             </div>
 
-       </div> --}}
+       </div>
+       <div class="max-w-6xl mx-auto flex sm:flex-row flex-col gap-5 px-4 ">
+            <div class=" sm:w-9/12 w-full  ">
+                <div class="sm:flex hidden justify-end mt-12">
+                    <a class="text-red-600 font-light">EXPLORE MORE</a>
+                </div>
+            </div>
+            <div class="sm:w-3/12 w-full  ">
+                <div class="sm:flex hidden  justify-end mt-12">
+                    <a class="text-red-600 font-light">EXPLORE MORE</a>
+                </div>
+            </div>
+       </div>
+       <br>
 
        <!-- understand how -->
         <div class=" bg-red-50 mt-12">

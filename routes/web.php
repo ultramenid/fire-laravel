@@ -21,6 +21,9 @@ Route::middleware([setLanguage::class])->group(function () {
         Route::get('/faq', [FaqController::class, 'listfaq'])->name('faq');
         Route::get('/downloads', [PagesController::class, 'downloads'])->name('downloads');
         Route::get('/atbd', [PagesController::class, 'atbd'])->name('atbd');
+        Route::get('/news/{id}/{slug}', [NewsController::class, 'detailnews'])->name('detailnews');
+        Route::get('/event/{id}/{slug}', [NewsController::class, 'detailevent'])->name('detailevent');
+        Route::get('/newnevent', [NewsController::class, 'newsnevent'])->name('newsnevent');
 
     });
 });

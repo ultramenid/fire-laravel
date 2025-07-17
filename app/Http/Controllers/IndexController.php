@@ -11,7 +11,9 @@ class IndexController extends Controller
     public function index(){
         $title = 'MapBiomas Indonesia - Fire';
         $description = "Inisiatif MapBiomas Fire dimulai sejak 2023, bersama sembilan jaringan organisasi masyarakat sipil (CSO) yang dikoordinasi oleh Auriga Nusantara dan Woods and Wayside International (WWI). MapBiomas Fire memetakan kebakaran menggunakan teknologi komputasi yang didukung algoritma machine learning dan deep learning.";
-        return view('frontends.index', compact('title', 'description'));
+        $news = $this->getNews();
+        $events = $this->getEvent();
+        return view('frontends.index', compact('title', 'description', 'news','events'));
     }
 
     public function selectNews(){
@@ -27,6 +29,17 @@ class IndexController extends Controller
         ->selectRaw($this->selectNews())
         ->where('publishdate', '<', Carbon::now('Asia/Jakarta'))
         ->where('category', 'news')
+        ->where('status', 1)
+        ->orderBy('publishdate','desc')
+        ->take(2)
+        ->get();
+    }
+
+    public function getEvent(){
+        return DB::table('news')
+        ->selectRaw($this->selectNews())
+        ->where('publishdate', '<', Carbon::now('Asia/Jakarta'))
+        ->where('category', 'event')
         ->where('status', 1)
         ->orderBy('publishdate','desc')
         ->take(2)

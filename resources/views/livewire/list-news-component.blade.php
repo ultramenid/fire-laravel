@@ -37,6 +37,10 @@
                                 <a class="hidden sm:block">Images</a>
                             </th>
 
+                            <th class="px-4 py-3 bg-gray-50 dark:bg-opacity-10  dark:text-white text-left text-xs font-medium text-gray-500 uppercase tracking-wider  sm:w-2/12 w-0">
+                                <a class="hidden sm:block">Category</a>
+                            </th>
+
                             <th  class=" cursor-pointer px-4 py-3 bg-gray-50 dark:bg-opacity-10  dark:text-white text-center font-medium text-gray-500 uppercase tracking-wider  sm:w-2/12 w-0">
                                 <div class=" space-x-1 hidden sm:flex justify-center">
                                     <a class="hidden sm:block text-xs">Status</a>
@@ -64,6 +68,14 @@
                                 <div class="px-4 items-center flex ">
                                     <img src="{{asset('storage/files/photos/thumbnail/'.$item->img)}}" alt="" class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center">
                                 </div>
+
+                            </td>
+                            <td class=" py-4 break-words text-sm font-bold text-newgray-700 dark:text-gray-300  px-4">
+                                 @if( $item->category == 'news')
+                                    <a class="break-all sm:inline-flex hidden justify-between  bg-landy dark:bg-newgray-700 bg-gray-200  rounded mt-1 py-2 px-2 focus:outline-none items-center">{{$item->category}}</a>
+                                @else
+                                    <a class="break-all sm:inline-flex hidden justify-between  bg-landy-2 dark:bg-newgray-700  bg-gray-200 rounded mt-1 py-2 px-2 focus:outline-none items-center">{{$item->category}}</a>
+                                @endif
 
                             </td>
 

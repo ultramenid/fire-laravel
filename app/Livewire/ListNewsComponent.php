@@ -40,7 +40,7 @@ class ListNewsComponent extends Component
         $sc = '%' . $this->query . '%';
         try {
             return  DB::table('news')
-                        ->select('id', 'titleID', 'img', 'status', 'publishdate')
+                        ->select('id', 'titleID', 'img', 'status', 'publishdate', 'category')
                         ->where('titleID', 'like', $sc)
                         ->orderByDesc('publishdate')
                         ->paginate($this->paginate);
