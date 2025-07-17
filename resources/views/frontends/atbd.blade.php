@@ -38,7 +38,7 @@
 
             <p class="mt-4 leading-relaxed"> Metodologi MapBiomas Indonesia | FIRE Koleksi 1.0 selengkapnya tersaji pada <a href="https://fire.mapbiomas.id/assets/ATBD-Mapbiomas-fire-koleksi-1.pdf" target="_blank" class="underline text-red-600">Algorithm Theoretical Basis Documents</a> (ATBD).</p> --}}
             <div class="prose max-w-none mt-4 sm:text-base text-sm leading-relaxed">
-                {!! $data->content !!}
+                {!! optional($data)->content !!}
             </div>
         </div>
     </div>

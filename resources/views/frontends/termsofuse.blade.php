@@ -26,7 +26,7 @@
                 <p class="leading-relaxed">"MapBiomas Indonesia | FIRE 1.0, 2024,<strong> Area Terbakar di Indonesia 2013-2023</strong>, diakses pada [tanggal, bulan, tahun] melalui [link]"</p>
             </div> --}}
             <div class="prose max-w-none mt-4 sm:text-base text-sm leading-relaxed">
-                {!! $data->content !!}
+                {!! optional($data)->content !!}
             </div>
         </div>
     </div>
