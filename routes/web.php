@@ -10,7 +10,7 @@ use App\Http\Middleware\hasSession;
 use App\Http\Middleware\setLanguage;
 use Illuminate\Support\Facades\Route;
 
-Route::redirect('/', '/id');
+Route::redirect('/', '/en');
 
 Route::middleware([setLanguage::class])->group(function () {
     Route::group(['prefix' => '{lang}'], function () {
