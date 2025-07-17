@@ -28,6 +28,7 @@ class EditNewsComponent extends Component
         $this->contentEN = $data->contentEN;
         $this->isactive = $data->status;
         $this->uphoto = $data->img;
+        $this->category = $data->category;
 
 
     }
