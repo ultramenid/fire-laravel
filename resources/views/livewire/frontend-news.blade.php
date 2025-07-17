@@ -23,7 +23,7 @@
                     <a class="text-sm  text-gray-500 font-light">{{$item->category}}</a>
                     <div class="mt-1">
                         <a href="{{ route('detailnews', [app()->getLocale(), $item->id, $item->slug]) }}" class="text-lg font-semibold">{{ $item->title }}</a>
-                        <p class="text-sm text-gray-600 mt-2">{{ $item->description }}</p>
+                        <p class="text-sm text-gray-600 mt-2 font-light">{{ $item->description }}</p>
                     </div>
                 </a>
             </div>
