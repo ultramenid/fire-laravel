@@ -44,14 +44,7 @@ class EditNewsComponent extends Component
         return $foto;
     }
 
-    public function updatedPhoto($photo){
-        $extension = pathinfo($photo->getFilename(), PATHINFO_EXTENSION);
-        if (!in_array($extension, ['png', 'jpeg', 'bmp', 'gif','jpg','webp','mp4', 'avi', '3gp', 'mov', 'm4a'])) {
-           $this->reset('photo');
-           Toaster::error('File not supported!');
-        }
 
-    }
 
     public function storePosts(){
         if($this->manualValidation()){
