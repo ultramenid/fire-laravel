@@ -14,7 +14,7 @@ use Masmerise\Toaster\Toaster;
 class EditNewsComponent extends Component
 {
     use WithFileUploads;
-    public $idNews, $publishdate, $titleID, $titleEN, $descriptionID, $descriptionEN, $contentID, $contentEN, $photo, $uphoto, $isactive;
+    public $idNews, $publishdate, $titleID, $titleEN, $descriptionID, $descriptionEN, $contentID, $contentEN, $photo, $uphoto, $isactive, $category;
 
     public function mount($id){
         $data = DB::table('news')->where('id', $id)->first();
@@ -74,6 +74,7 @@ class EditNewsComponent extends Component
                         'descriptionEN' => $this->descriptionEN,
                         'contentID' => $this->contentID,
                         'contentEN' => $this->contentEN,
+                        'category' => $this->category,
                         'img' => $name,
                         'status' => $this->isactive,
                         'updated_at' => Carbon::now('Asia/Jakarta')
@@ -118,6 +119,9 @@ class EditNewsComponent extends Component
             return;
         }elseif($this->publishdate == '' ){
             Toaster::error('Publish date is required!');
+            return;
+        }elseif($this->category == '' ){
+            Toaster::error('Category is required!');
             return;
         }
         return true;

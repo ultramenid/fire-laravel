@@ -48,6 +48,7 @@ class AddNewsComponent extends Component
                 'descriptionEN' => $this->descriptionEN,
                 'contentID' => $this->contentID,
                 'contentEN' => $this->contentEN,
+                'category' => $this->category,
                 'img' => $this->uploadImage(),
                 'status' => $this->isactive,
                 'created_at' => Carbon::now('Asia/Jakarta')
@@ -94,6 +95,9 @@ class AddNewsComponent extends Component
             return;
         }elseif($this->publishdate == '' ){
             Toaster::error('Publish date is required!');
+            return;
+        }elseif($this->category == '' ){
+            Toaster::error('Category is required!');
             return;
         }
         return true;

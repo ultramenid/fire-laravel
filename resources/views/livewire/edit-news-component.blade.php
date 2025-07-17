@@ -56,6 +56,14 @@
                         </select>
                     </label>
 
+                    <h1 class="text-xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4 mt-6">Category</h1>
+                    <label class="w-full"  >
+                        <select wire:model='category' class=" mb-6 bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20">
+                            <option >Category</option>
+                            <option value="news">News</option>
+                            <option value="event">Event</option>
+                        </select>
+                    </label>
 
 
 

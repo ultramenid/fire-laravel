@@ -107,6 +107,8 @@
         <div class=" bg-red-50 mt-12">
             <div class="max-w-6xl mx-auto px-4 py-6">
                 <a class="bg-red-600 p-2 text-white font-semibold sm:text-base text-xs">How Mapbiomas Fire Works</a>
+
+                {{-- image pc --}}
                 <div class="w-full sm:flex hidden justify-center  mt-12 ">
                     @if (app()->getLocale() == 'en')
                         <img src="{{ asset('assets/how-we-work-4.png') }}" alt="Mapbiomas Fire" class="w-full h-full">
@@ -114,9 +116,9 @@
                         <img src="{{ asset('assets/how-we-work-3-2.png') }}" alt="Mapbiomas Fire" class="w-full h-full">
                     @endif
                 </div>
+                {{-- image mobile  --}}
                 <div class="flex sm:flex-col flex-row justify-center mt-12 gap-4">
                     <div class="flex">
-
                     </div>
 
                     <div class="sm:hidden flex sm:flex-row flex-col gap-1 items-top">
@@ -176,6 +178,8 @@
                 </div>
             </div>
         </div>
+
+        {{-- <livewire:counter-Component /> --}}
 
         <!-- infographic -->
          <div class="max-w-6xl mx-auto px-4 mt-12">
