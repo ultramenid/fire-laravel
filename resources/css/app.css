@@ -7,3 +7,13 @@
 ul > li::marker {
     font-weight: bold;
   }
+
+a:link {
+  /* color: #E17367; */ /* Remove or comment this out */
+  text-decoration: none;
+}
+
+/* Add this more specific rule at the end of your file */
+p a:link, p a:visited, p a:hover, p a:active {
+  color: #dc2626 !important;
+}
