@@ -26,14 +26,14 @@
 
    <!-- content -->
        <div class="max-w-6xl mx-auto flex sm:flex-row flex-col gap-5 px-4 mt-12">
-            <div class=" sm:w-9/12 w-full  ">
+            <div class=" w-full  ">
                 <a class="bg-red-600 px-4 py-1 text-white font-semibold capitalize">{{__('news') }}</a>
                 <div class="flex sm:flex-row flex-col  h-full   gap-4  snap-x snap-mandatory mt-4">
                     @foreach ($news as $item)
                         <!-- card -->
                         <div class="sm:flex-shrink flex-shrink-0 snap-center sm:6/12 w-full ">
                             <a href="{{ route('detailnews', [app()->getLocale(), $item->id, $item->slug]) }}"  class="sm:w-7/12 w-full">
-                                <img src="{{ asset('storage/files/photos/'.$item->img) }}"  alt="{{ $item->title }}" class="bg-red-200 h-52 w-full object-center object-cover" />
+                                <img src="{{ asset('storage/files/photos/'.$item->img) }}"  alt="{{ $item->title }}" class="bg-red-200 h-96 w-full object-center object-cover" />
                             </a>
 
                             <a href="{{ route('detailnews', [app()->getLocale(), $item->id, $item->slug]) }}" class="md:mt-6 mt-3 font-semibold flex-shrink-0 flex ">{{ $item->title }}</a>
@@ -41,39 +41,25 @@
                                 {{ $item->description }}
                             </div>
                         </div>
+
                     @endforeach
                 </div>
                 <div class="sm:hidden flex justify-end mt-12">
-                    <a class="text-red-600 font-light">EXPLORE MORE</a>
+                    <a class="text-red-600 font-light"></a>
                 </div>
             </div>
-            <div class="sm:w-3/12 w-full  ">
-                <a class="bg-red-600 px-4 py-1 text-white font-semibold capitalize">Event</a>
-                <div class=" flex flex-col gap-4 mt-4">
-                    @foreach ($events as $item)
-                        <!-- card -->
-                        <div class="sm:flex-shrink flex-shrink-0 snap-center w-full  ">
-                            <a   class="sm:w-7/12 w-full">
-                                <img src="{{ asset('storage/files/photos/'.$item->img) }}"  alt="{{ $item->title }}" class="bg-red-200 h-36 w-full" />
-                            </a>
-                        </div>
-                    @endforeach
-                </div>
-                <div class="sm:hidden flex justify-end mt-12">
-                    <a class="text-red-600 font-light">EXPLORE MORE</a>
-                </div>
-            </div>
+
 
        </div>
        <div class="max-w-6xl mx-auto flex sm:flex-row flex-col gap-5 px-4 ">
             <div class=" sm:w-9/12 w-full  ">
                 <div class="sm:flex hidden justify-end mt-12">
-                    <a class="text-red-600 font-light">EXPLORE MORE</a>
+                    <a class="text-red-600 font-light"></a>
                 </div>
             </div>
             <div class="sm:w-3/12 w-full  ">
                 <div class="sm:flex hidden  justify-end mt-12">
-                    <a class="text-red-600 font-light">EXPLORE MORE</a>
+                    <a class="text-red-600 font-light"></a>
                 </div>
             </div>
        </div>
