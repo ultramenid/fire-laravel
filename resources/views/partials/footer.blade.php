@@ -56,31 +56,31 @@
  <div class="bg-gray-500 border-t-4 border-red-500 mt-20 ">
     <div class="flex sm:flex-row flex-col gap-8  py-4 mt-4 max-w-6xl mx-auto px-4">
         <div class="flex flex-col">
-            <a href="{{ route('about', app()->getlocale() )}}" class="text-white">about</a>
+            <a href="{{ route('about', app()->getlocale() )}}" class="text-white font-bold">about</a>
 
         </div>
         <div class="flex flex-col">
-            <a href="{{ route('faq', app()->getlocale() )}}" class="text-white">FAQ</a>
+            <a href="{{ route('faq', app()->getlocale() )}}" class="text-white font-bold">FAQ</a>
         </div>
 
         <div class="flex flex-col">
-            <a class="text-white">map & data</a>
-            <a href="{{ route('termsofuse', app()->getlocale() )}}" class=" text-white">term of use</a>
-            <a href="https://platform.indonesia.mapbiomas.org/fogo" class="text-white">platform & map</a>
+            <a class="text-white font-bold">map & data</a>
+            <a href="{{ route('termsofuse', app()->getlocale() )}}" class=" text-white font-light mt-2">term of use</a>
+            <a href="https://platform.indonesia.mapbiomas.org/fogo" class="text-white font-light">platform & map</a>
         </div>
 
         <div class="flex flex-col">
-            <a class="text-white">methodology</a>
-            <a href="{{ route('atbd', app()->getlocale() )}}" class="text-white ">ATBD</a>
-            <a href="{{ route('refrencemap', app()->getlocale() )}}" class="text-white">reference map</a>
+            <a class="text-white font-bold">methodology</a>
+            <a href="{{ route('atbd', app()->getlocale() )}}" class="text-white mt-2 font-light">ATBD</a>
+            <a href="{{ route('refrencemap', app()->getlocale() )}}" class="text-white font-light">reference map</a>
         </div>
 
         <div class="flex flex-col">
-            <a class="text-white">news & event</a>
+            <a class="text-white font-bold">news & event</a>
         </div>
 
         <div class="flex flex-col">
-            <a href="{{ route('downloads', app()->getlocale() )}}" class="text-white" class="font-semibold">downloads</a>
+            <a href="{{ route('downloads', app()->getlocale() )}}" class="text-white font-bold" >downloads</a>
         </div>
 
     </div>
