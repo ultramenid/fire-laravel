@@ -28,7 +28,7 @@
             </a>
             <div class="absolute mt-8 z-20 bg-white px-2 py-2 flex flex-col space-y-2 w-52 border-red-600 border-b" x-show="pagesMap" x-cloak>
                 <a href="{{ route('termsofuse', [app()->getLocale()]) }}" class="text-sm mr-6">terms of use</a>
-                <a href="https://platform.indonesia.mapbiomas.org/fogo" class="text-sm mr-6">platform/map</a>
+                <a href="https://plataforma.mapbiomas.org/fire/fire_annual?t[regionKey]=indonesia" class="text-sm mr-6">platform/map</a>
             </div>
         </div>
 
