@@ -24,6 +24,7 @@
                     <a  href="{{url('/cms/termofuse')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">termofuse</a>
                     <a  href="{{url('/cms/cmsatbd')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">ATBD</a>
                     <a  href="{{url('/cms/cmsrefrencemap')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">refrence map</a>
+                    <a  href="{{url('/cms/cmsdownload')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">downloads</a>
 
                 </div>
             </div>

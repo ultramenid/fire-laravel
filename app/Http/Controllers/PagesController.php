@@ -32,6 +32,12 @@ class PagesController extends Controller
         return view('backends.refrencemap', compact('title', 'nav'));
     }
 
+    public function cmsdownloads(){
+        $title = 'MapBiomas Fire - Downloads';
+        $nav = 'pages';
+        return view('backends.downloads', compact('title', 'nav'));
+    }
+
     public function getSelect(){
         if (App::getLocale() == 'id') {
             return 'id, contentID as content';
@@ -42,6 +48,12 @@ class PagesController extends Controller
 
     public function getRefrenceMap(){
         return DB::table('pagerefrencemap')
+                ->selectRaw($this->getSelect())
+                ->where('id', 1)
+                ->first();
+    }
+     public function getDownloads(){
+        return DB::table('pagedownload')
                 ->selectRaw($this->getSelect())
                 ->where('id', 1)
                 ->first();
@@ -92,7 +104,8 @@ class PagesController extends Controller
     public function downloads(){
         $title = 'MapBiomas Fire - Downloads';
         $description = "Inisiatif MapBiomas Fire dimulai sejak 2023, bersama sembilan jaringan organisasi masyarakat sipil (CSO) yang dikoordinasi oleh Auriga Nusantara dan Woods and Wayside International (WWI). MapBiomas Fire memetakan kebakaran menggunakan teknologi komputasi yang didukung algoritma machine learning dan deep learning.";
-        return view('frontends.downloads', compact('title','description'));
+         $data = $this->getDownloads();
+        return view('frontends.downloads', compact('title','description', 'data'));
     }
 
     public function atbd(){
