@@ -21,13 +21,21 @@
         <img src="{{ asset('assets/hero-fire.png') }}" alt="Mapbiomas Indonesia - Fire" class=" mt-2 z-10 sm:h-[45vh] h-[30vh] w-full object-top object-cover">
     </div>
 
-    <div class="sm:px-0 px-4">
+    {{-- <div class="sm:px-0 px-4">
         <div class="max-w-3xl mx-auto bg-white relative  -mt-20 z-20 rounded sm:px-6 px-4 sm:py-12 py-4 border-b border-red-600 min-h-[40vh]">
             <iframe src="https://flo.uri.sh/visualisation/15997818/embed" frameborder="0" width="100%" height="600px"></iframe>
             <iframe src="https://flo.uri.sh/visualisation/15998156/embed" frameborder="0" width="100%" height="600px"></iframe>
             <iframe src="https://flo.uri.sh/visualisation/15998921/embed" frameborder="0" width="100%" height="600px"></iframe>
             <iframe src="https://flo.uri.sh/visualisation/15998992/embed" frameborder="0" width="100%" height="600px"></iframe>
             <iframe src="https://flo.uri.sh/visualisation/18980331/embed" frameborder="0" width="100%" height="600px"></iframe>
+        </div>
+    </div> --}}
+     <div class="sm:px-0 px-4">
+        <div class="max-w-3xl mx-auto bg-white relative  -mt-20 z-20 rounded sm:px-6 px-4 sm:py-12 py-4 border-b border-red-600 min-h-[40vh]">
+            <a class="text-xl font-semibold ">Refrence map</a>
+            <div class="prose max-w-none mt-4 sm:text-base text-sm leading-relaxed">
+                {!! optional($data)->content !!}
+            </div>
         </div>
     </div>
 

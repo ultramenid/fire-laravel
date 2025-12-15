@@ -40,6 +40,7 @@ Route::middleware([checkSession::class])->group(function () {
     Route::get('/cms/editnews/{id}', [NewsController::class, 'edit']);
     Route::get('/cms/pageabout', [PagesController::class, 'cmsabout']);
     Route::get('/cms/termofuse', [PagesController::class, 'cmstermofuse']);
+    Route::get('/cms/cmsrefrencemap', [PagesController::class, 'cmsrefrencemap']);
     Route::get('/cms/cmsatbd', [PagesController::class, 'cmsatbd']);
 
     Route::group(['prefix' => '/cms/fire-filemanager'], function () {
