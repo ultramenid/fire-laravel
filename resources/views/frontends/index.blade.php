@@ -146,11 +146,21 @@
         <!-- infographic -->
          <div class="max-w-6xl mx-auto px-4 mt-12">
             <a class="bg-red-600 py-2 px-2 text-white font-semibold ">Infographic</a>
-            @if (app()->getLocale() == 'en')
-                <img src="{{ asset('assets/Infographic_EN.jpeg') }}" alt="Mapbiomas Indonesia - Fire" class="w-full h-full mt-4">
-            @else
-                <img src="{{ asset('assets/infographic.jpg') }}" alt="Mapbiomas Indonesia - Fire" class="w-full h-full mt-4">
-            @endif
+                @if ($infographic)
+                    <div class="mt-4 flex flex-col gap-2">
+                        <a href="{{ asset('storage/files/photos/' . $infographic->img) }}">
+                            <img src="{{ asset('storage/files/photos/' . $infographic->img) }}"
+                                alt="{{ $infographic->title }}"
+                                class="w-full h-full mt-4" loading="lazy">
+                        </a>
+                        <a href="{{ asset('storage/files/photos/' . $infographic->img) }}"
+                        class="text-landy text-xl font-semibold">
+                            {{ $infographic->title }}
+                        </a>
+                    </div>
+                @else
+                    <p class="mt-4 text-landy font-semibold">No infographic available.</p>
+                @endif
          </div>
 
 

@@ -13,7 +13,8 @@ class IndexController extends Controller
         $description = "Inisiatif MapBiomas Fire dimulai sejak 2023, bersama sembilan jaringan organisasi masyarakat sipil (CSO) yang dikoordinasi oleh Auriga Nusantara dan Woods and Wayside International (WWI). MapBiomas Fire memetakan kebakaran menggunakan teknologi komputasi yang didukung algoritma machine learning dan deep learning.";
         $news = $this->getNews();
         $events = $this->getEvent();
-        return view('frontends.index', compact('title', 'description', 'news','events'));
+        $infographic = $this->getInfographic();
+        return view('frontends.index', compact('title', 'description', 'news','events', 'infographic'));
     }
 
     public function selectNews(){
@@ -23,6 +24,23 @@ class IndexController extends Controller
             return 'id, titleEN as title, descriptionEN as description, img, slug';
         }
     }
+    public function getSelectInfographic(){
+        if (app()->getLocale() == 'id') {
+            return 'id, titleID as title, imgID as img, slug';
+        } else {
+            return 'id, titleEN as title, imgEN as img, slug';
+        }
+    }
+
+     public function getInfographic(){
+        return DB::table('infographic')
+        ->selectRaw($this->getSelectInfographic())
+        ->where('publishdate', '<', Carbon::now('Asia/Jakarta'))
+        ->where('status', 1)
+        ->orderBy('publishdate','desc')
+        ->first();
+    }
+
 
      public function getNews(){
         return DB::table('news')
@@ -45,4 +63,6 @@ class IndexController extends Controller
         ->take(2)
         ->get();
     }
+
+
 }
