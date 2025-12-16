@@ -13,6 +13,10 @@
                 <a href="{{url('/cms/listnews')}}" class=" px-0.5  @if($nav == 'news' )   text-newgray-900 dark:text-gray-300 @endif   hover:text-newgray-900 dark:hover:text-gray-300 cursor-pointer" >news</a>
             </div>
 
+            <div class="hover:bg-gray-200 dark:hover:bg-newgray-700 py-3 px-2 rounded @if($nav == 'infographic' )border-b-2  dark:border-gray-300 border-newgray-900 @endif ">
+                <a href="{{url('/cms/listinfographic')}}" class=" px-0.5  @if($nav == 'infographic' )   text-newgray-900 dark:text-gray-300 @endif   hover:text-newgray-900 dark:hover:text-gray-300 cursor-pointer" >infographic</a>
+            </div>
+
             <div @click="pages = ! pages" @click.away="pages=false" class=" cursor-pointer flex-col flex hover:bg-gray-200 dark:hover:bg-newgray-700 py-3  rounded @if($nav == 'pages' )border-b-2  dark:border-gray-300 border-newgray-900 @endif " x-data="{pages:false}">
                 <a   class="px-2 hover:text-newgray-900 dark:hover:text-gray-300 cursor-pointer inline-flex   items-center @if($nav == 'pages') text-newgray-900 dark:text-gray-300 @endif"  >Pages
                     <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': pages, 'rotate-0': !pages}" class="w-4 ml-1 -mb-1 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor">

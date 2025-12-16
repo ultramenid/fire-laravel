@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\InfographicController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PagesController;
 use App\Http\Middleware\checkSession;
@@ -36,6 +37,9 @@ Route::middleware([checkSession::class])->group(function () {
     Route::get('/cms/addfaq', [FaqController::class, 'add']);
     Route::get('/cms/editfaq/{id}', [FaqController::class, 'edit']);
     Route::get('/cms/listnews', [NewsController::class, 'index']);
+    Route::get('/cms/listinfographic', [InfographicController::class, 'index']);
+    Route::get('/cms/addinfographic', [InfographicController::class, 'addinfographic']);
+    Route::get('/cms/editinfographic/{id}', [InfographicController::class, 'edit']);
     Route::get('/cms/addnews', [NewsController::class, 'add']);
     Route::get('/cms/editnews/{id}', [NewsController::class, 'edit']);
     Route::get('/cms/pageabout', [PagesController::class, 'cmsabout']);
