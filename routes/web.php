@@ -25,6 +25,7 @@ Route::middleware([setLanguage::class])->group(function () {
         Route::get('/news/{id}/{slug}', [NewsController::class, 'detailnews'])->name('detailnews');
         Route::get('/event/{id}/{slug}', [NewsController::class, 'detailevent'])->name('detailevent');
         Route::get('/newnevent', [NewsController::class, 'newsnevent'])->name('newsnevent');
+        Route::get('/infographics', [InfographicController::class, 'listinfographic'])->name('infographics');
 
     });
 });

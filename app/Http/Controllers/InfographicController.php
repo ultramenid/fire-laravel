@@ -25,4 +25,9 @@ class InfographicController extends Controller
         $idInfographic = $id;
         return view('backends.editInfographic', compact('title', 'nav', 'idInfographic'));
     }
+    public function listinfographic(){
+        $title = 'MapBiomas Landy - Infographics';
+        $description = "Bagian dari gerakan global MapBiomas Network untuk menghasilkan peta tutupan dan penggunaan lahan tahunan.";
+        return view('frontends.infographics', compact('title', 'description'));
+    }
 }
